@@ -23,7 +23,7 @@ defineProps({
           {{ title }}
         </h1>
         <p class="my-4 text-xl text-white">
-          {{subTitle}}
+          {{ subTitle }}
         </p>
       </div>
     </div>

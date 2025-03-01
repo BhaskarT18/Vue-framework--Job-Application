@@ -1,5 +1,5 @@
 <script setup>
-import { ref,onMounted } from "vue";
+import { ref, onMounted } from "vue";
 
 const name = ref("vishal");
 const status = ref("active");
@@ -17,7 +17,6 @@ const deleteTask = (index) => {
   tasks.value.splice(index, 1);
 };
 
-
 const handleToggle = () => {
   if (status.value === "active") {
     status.value = "pending";
@@ -29,25 +28,18 @@ const handleToggle = () => {
 };
 
 onMounted(async () => {
-
   try {
-    const res = await fetch('https://jsonplaceholder.typicode.com/todos')
-    const data =  await res.json()
-    console.log(data)
-    tasks.value= data.map((task)=>{
-       return task.title
-    })
-    
+    const res = await fetch("https://jsonplaceholder.typicode.com/todos");
+    const data = await res.json();
+    console.log(data);
+    tasks.value = data.map((task) => {
+      return task.title;
+    });
   } catch (error) {
-    console.log(error)
+    console.log(error);
   }
-  
-})
-
+});
 </script>
-
-
-
 
 <template>
   <h1>Vue Jobs</h1>
@@ -69,7 +61,7 @@ onMounted(async () => {
   <p>Task:</p>
   <ul>
     <li v-for="(task, index) in tasks" :key="task">
-      <span>{{ task }} </span>  <button @click="deleteTask(index)">X</button>
+      <span>{{ task }} </span> <button @click="deleteTask(index)">X</button>
     </li>
   </ul>
   <p v-if="status === 'active'">User is active</p>

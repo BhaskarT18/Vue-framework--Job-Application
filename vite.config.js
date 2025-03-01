@@ -11,10 +11,10 @@ export default defineConfig({
   theme: {
     extends: {
       fontFamily: {
-        sans: ["poppins", "sans-sarif"],
+        sans: ["Poppins", "sans-serif"],
       },
-      gridTamplateColumn: {
-        "70/30": "70% 28%",
+      gridTemplateColumns: {
+        "70/30": "70% 30%", // Fixed spelling issue and percentage mismatch
       },
     },
   },
