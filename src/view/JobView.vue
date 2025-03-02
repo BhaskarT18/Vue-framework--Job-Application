@@ -1,5 +1,5 @@
 <script setup>
-import pulseLoader from "vue-spinner/src/PulseLoader.vue";
+import PulseLoader from "vue-spinner/src/PulseLoader.vue";
 import BackButton from "../components/BackButton.vue";
 import { useToast } from "vue-toastification";
 import { reactive, onMounted } from "vue";
@@ -20,7 +20,7 @@ const state = reactive({
 onMounted(async () => {
   try {
     const response = await axios.get(`/api/jobs/${jobId}`);
-    state.job = await response.data;
+    state.job = response.data;
   } catch (error) {
     console.error("eror fetching in single job".error);
   } finally {
@@ -28,14 +28,21 @@ onMounted(async () => {
   }
 });
 
- const handleDeleteJob = async () => {
+const handleDeleteJob = async () => {
   try {
-    await axios.delete(`/api/jobs/${jobId}`);
-    toast.success("Job Added Successfully");
-    router.push("/jobs");
+    const confirm = window.confirm("Are you sure you want to delete this job?");
+
+    if (confirm) {
+      await axios.delete(`/api/jobs/${jobId}`);
+
+      toast.success("Job Deleted Successfully");
+
+      router.push("/jobs");
+    }
   } catch (error) {
-    console.error(error);
-    toast.error("something went wrong to delete job");
+    console.error("Error deleting job", error);
+
+    toast.error("Job Not Deleted");
   }
 };
 </script>
@@ -77,8 +84,8 @@ onMounted(async () => {
         <aside>
           <!-- Company Info -->
           <div class="bg-white p-6 rounded-lg shadow-md">
-            <h3 class="text-xl font-bold mb-6">{{ state.job.company.name }}</h3>
-            <h2 class="text-2xl">NewTek Solutions</h2>
+            <h3 class="text-xl font-bold mb-6">Company Info</h3>
+            <h2 class="text-2xl">{{ state.job.company.name }}</h2>
             <p class="my-2">
               {{ state.job.company.description }}
             </p>
@@ -99,7 +106,7 @@ onMounted(async () => {
           <div class="bg-white p-6 rounded-lg shadow-md mt-6">
             <h3 class="text-xl font-bold mb-6">Manage Job</h3>
             <RouterLink
-              :to="`/jobs/edit/${state.job.id}`"
+              :to="`/jobs/edit/${state.job.id}`" 
               class="bg-green-500 hover:bg-green-600 text-white text-center font-bold py-2 px-4 rounded-full w-full focus:outline-none focus:shadow-outline mt-4 block"
               >Edit Job</RouterLink
             >
@@ -116,6 +123,6 @@ onMounted(async () => {
   </section>
   <!-- Loader when loader is true  -->
   <div v-else class="text-center text-gray-500 py-6">
-    <pulseLoader />
+    <PulseLoader />
   </div>
 </template>

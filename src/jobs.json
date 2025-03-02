@@ -155,116 +155,18 @@
       }
     },
     {
-      "id": "8fe8",
-      "type": "Full-Time",
       "title": "React",
+      "type": "Remote",
+      "location": "Sunt esse earum enim",
       "description": "Pariatur Consequatu",
       "salary": "$175K - $200K",
-      "location": "Sunt esse earum enim",
       "company": {
         "name": "Rosa and Armstrong Trading",
         "description": "Sunt aspernatur id s",
         "contactEmail": "soceqygo@mailinator.com",
         "contactPhone": "+1 (535) 245-1249"
-      }
-    },
-    {
-      "id": "d9ee",
-      "type": "Internship",
-      "title": "Channing Cain",
-      "description": "Maiores recusandae ",
-      "salary": "$80K - $90K",
-      "location": "Rem sint culpa quid",
-      "company": {
-        "name": "Ochoa and Dominguez Trading",
-        "description": "Laboris voluptas ut ",
-        "contactEmail": "guwot@mailinator.com",
-        "contactPhone": "+1 (788) 369-3651"
-      }
-    },
-    {
-      "id": "87fa",
-      "type": "Internship",
-      "title": "Maia Nash",
-      "description": "Autem sunt alias fa",
-      "salary": "$80K - $90K",
-      "location": "Laboris eum illo cil",
-      "company": {
-        "name": "Pace and Burton Traders",
-        "description": "Quis accusantium Nam",
-        "contactEmail": "nusixemo@mailinator.com",
-        "contactPhone": "+1 (455) 284-9633"
-      }
-    },
-    {
-      "id": "4f29",
-      "type": "Internship",
-      "title": "Alden Huff",
-      "description": "Sed veniam id faci",
-      "salary": "$150K - $175K",
-      "location": "Quibusdam est qui do",
-      "company": {
-        "name": "Oneal and Woodard Plc",
-        "description": "Similique alias debi",
-        "contactEmail": "syzexofoq@mailinator.com",
-        "contactPhone": "+1 (775) 552-4454"
-      }
-    },
-    {
-      "id": "d9e1",
-      "type": "Internship",
-      "title": "Zena Carney",
-      "description": "Maiores consequat E",
-      "salary": "$50K - $60K",
-      "location": "Aperiam laborum offi",
-      "company": {
-        "name": "Byers and Holcomb Traders",
-        "description": "Aut est sint qui dol",
-        "contactEmail": "suxum@mailinator.com",
-        "contactPhone": "+1 (914) 221-7395"
-      }
-    },
-    {
-      "id": "c7d6",
-      "type": "Internship",
-      "title": "Logan Walls",
-      "description": "Velit qui distincti",
-      "salary": "$150K - $175K",
-      "location": "Velit tempore at e",
-      "company": {
-        "name": "Wise Berg Co",
-        "description": "Ea itaque ea et dolo",
-        "contactEmail": "legat@mailinator.com",
-        "contactPhone": "+1 (331) 307-2955"
-      }
-    },
-    {
-      "id": "90cd",
-      "type": "Full-Time",
-      "title": "Zachery Kline",
-      "description": "Minim omnis reiciend",
-      "salary": "$125K - $150K",
-      "location": "Porro consequatur n",
-      "company": {
-        "name": "Meyers and Grant Co",
-        "description": "Minima aut qui est ",
-        "contactEmail": "ludugebu@mailinator.com",
-        "contactPhone": "+1 (566) 845-9045"
-      }
-    },
-    {
-      "id": "1b9f",
-      "type": "Part-Time",
-      "title": "Petra Holt",
-      "description": "Ad voluptas vel dolo",
-      "salary": "$100K - $125K",
-      "location": "Aut porro tempor mol",
-      "company": {
-        "name": "Gallegos and Caldwell Inc",
-        "description": "Autem et eaque in el",
-        "contactEmail": "roxema@mailinator.com",
-        "contactPhone": "+1 (972) 908-6829"
-      }
+      },
+      "id": "8fe8"
     }
   ]
 }
