@@ -141,20 +141,6 @@
       }
     },
     {
-      "id": "6b8c",
-      "type": "Internship",
-      "title": "Ruth Cantrell",
-      "description": "Harum dolore eum vol",
-      "salary": "$175K - $200K",
-      "location": "Obcaecati reprehende",
-      "company": {
-        "name": "Barber Pollard Co",
-        "description": "Quod tempore dolore",
-        "contactEmail": "babecita@mailinator.com",
-        "contactPhone": "+1 (927) 271-8224"
-      }
-    },
-    {
       "title": "React",
       "type": "Remote",
       "location": "Sunt esse earum enim",
@@ -167,6 +153,34 @@
         "contactPhone": "+1 (535) 245-1249"
       },
       "id": "8fe8"
+    },
+    {
+      "id": "7283",
+      "type": "Remote",
+      "title": "Lael Daniel",
+      "description": "Ut cum molestias mol",
+      "salary": "$125K - $150K",
+      "location": "Ut mollitia proident",
+      "company": {
+        "name": "Weaver Swanson Associates",
+        "description": "Minus eum dignissimo",
+        "contactEmail": "picuv@mailinator.com",
+        "contactPhone": "+1 (619) 516-5604"
+      }
+    },
+    {
+      "id": "77c4",
+      "type": "Internship",
+      "title": "Gavin Gonzalez",
+      "description": "Delectus qui aut sa",
+      "salary": "$70K - $80K",
+      "location": "Magnam sit nulla cor",
+      "company": {
+        "name": "Bush Powell Co",
+        "description": "Dolorum quo fugiat ",
+        "contactEmail": "figymy@mailinator.com",
+        "contactPhone": "+1 (431) 995-7839"
+      }
     }
   ]
 }

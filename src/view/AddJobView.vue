@@ -4,7 +4,7 @@ import axios from "axios";
 import { reactive } from "vue";
 import { useToast } from "vue-toastification";
 
-const router = useRouter(); // Correct usage
+const router = useRouter();
 const toast = useToast();
 
 const form = reactive({
