@@ -97,6 +97,34 @@
         "contactEmail": "vowup@mailinator.com",
         "contactPhone": "+1 (174) 317-2832"
       }
+    },
+    {
+      "id": "8",
+      "title": "Josephine Macias",
+      "type": "Part-Time",
+      "location": "Et incididunt veniam",
+      "description": "Et amet minim vitae",
+      "salary": "$125K - $150K",
+      "company": {
+        "name": "Dillard and Johnston Co",
+        "description": "Velit accusantium d",
+        "contactEmail": "qixazavim@mailinator.com",
+        "contactPhone": "+1 (956) 469-9787"
+      }
+    },
+    {
+      "id": "9",
+      "type": "Internship",
+      "title": "Shannon Bell",
+      "description": "Tempore velit maxim",
+      "salary": "$60K - $70K",
+      "location": "Sed labore nisi quis",
+      "company": {
+        "name": "Fitzgerald Lawrence Associates",
+        "description": "Laborum quo assumend",
+        "contactEmail": "huzacabuke@mailinator.com",
+        "contactPhone": "+1 (591) 345-1356"
+      }
     }
   ]
 }

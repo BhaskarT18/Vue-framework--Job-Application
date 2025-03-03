@@ -9,13 +9,16 @@ export default defineConfig({
     host: "0.0.0.0",
     port: 3000,
     allowedHosts: ["job-listing-vueapp.onrender.com"],
-    // proxy: {
-    //   "/api": {
-    //     target: "https://job-listing-vueapp.onrender.com",
-    //     changeOrigin: true,
-    //     rewrite: (path) => path.replace(/^\/api/, ""),
-    //   },
-    // },
+    proxy: {
+      "/api": {
+        // target: "https://job-listing-vueapp.onrender.com",
+        target: "http://localhost:5000/",
+
+
+        changeOrigin: true,
+        rewrite: (path) => path.replace(/^\/api/, ""),
+      },
+    },
   },
   theme: {
     extends: {
