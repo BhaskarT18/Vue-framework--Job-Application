@@ -1,19 +1,17 @@
 import { defineConfig } from "vite";
 import vue from "@vitejs/plugin-vue";
-import { fileURLToPath, URL } from 'node:url';
-
+import { fileURLToPath, URL } from "node:url";
 import tailwindcss from "@tailwindcss/vite";
 
-// https://vite.dev/config/
 export default defineConfig({
   plugins: [vue(), tailwindcss()],
   server: {
-    host: "0.0.0.0", 
+    host: "0.0.0.0",
     port: 3000,
     allowedHosts: ["job-listing-vueapp.onrender.com"],
     proxy: {
       "/api": {
-        target: "http://localhost:5000",
+        target: "https://job-listing-vueapp.onrender.com",
         changeOrigin: true,
         rewrite: (path) => path.replace(/^\/api/, ""),
       },
@@ -25,13 +23,13 @@ export default defineConfig({
         sans: ["Poppins", "sans-serif"],
       },
       gridTemplateColumns: {
-        "70/30": "70% 30%", // Fixed spelling issue and percentage mismatch
+        "70/30": "70% 30%",
       },
     },
   },
   resolve: {
     alias: {
-      '@': fileURLToPath(new URL('./src', import.meta.url)),
+      "@": fileURLToPath(new URL("./src", import.meta.url)),
     },
   },
 });
