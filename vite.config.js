@@ -1,15 +1,9 @@
-import { defineConfig } from "vite";
-import vue from "@vitejs/plugin-vue";
-import { fileURLToPath, URL } from 'node:url';
-
-import tailwindcss from "@tailwindcss/vite";
-
-// https://vite.dev/config/
 export default defineConfig({
   plugins: [vue(), tailwindcss()],
   server: {
-    host: "0.0.0.0", 
+    host: "0.0.0.0",
     port: 3000,
+    allowedHosts: ["vue-framework-job-application.onrender.com"], // Add your Render domain here
     proxy: {
       "/api": {
         target: "http://localhost:5000",
@@ -24,7 +18,7 @@ export default defineConfig({
         sans: ["Poppins", "sans-serif"],
       },
       gridTemplateColumns: {
-        "70/30": "70% 30%", // Fixed spelling issue and percentage mismatch
+        "70/30": "70% 30%",
       },
     },
   },
