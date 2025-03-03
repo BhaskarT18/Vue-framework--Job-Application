@@ -10,7 +10,7 @@ export default defineConfig({
   server: {
     host: "0.0.0.0", 
     port: 3000,
-    allowedHosts: ["vue-framework-job-application.onrender.com"],
+    allowedHosts: ["job-listing-vueapp.onrender.com"],
     proxy: {
       "/api": {
         target: "http://localhost:5000",
