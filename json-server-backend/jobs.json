@@ -83,6 +83,20 @@
         "contactEmail": "contact@ipsumlorem.com",
         "contactPhone": "555-555-5555"
       }
+    },
+    {
+      "id": "7",
+      "type": "Part-Time",
+      "title": "Willow Battle",
+      "description": "Sed excepturi Nam eo",
+      "salary": "$60K - $70K",
+      "location": "Dolorem qui in duis ",
+      "company": {
+        "name": "Larsen and Daniels Trading",
+        "description": "Deleniti nulla rem s",
+        "contactEmail": "vowup@mailinator.com",
+        "contactPhone": "+1 (174) 317-2832"
+      }
     }
   ]
 }
