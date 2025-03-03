@@ -3,7 +3,7 @@ const fs = require("fs");
 const cors = require("cors");
 
 const app = express();
-app.use(cors());
+app.use(cors({ origin: "https://job-listing-vueappclient.onrender.com/", credentials: true }));
 
 app.use(express.json());
 
